@@ -95,6 +95,7 @@ Output → predicted class + confidence score
 - Modular ML project structure
 - Model evaluation and saving strategies
 <br>
+
 📌 Future Improvements
 - Use Transfer Learning (ResNet/EfficientNet) for higher accuracy
 - Deploy using Streamlit or Gradio web app
