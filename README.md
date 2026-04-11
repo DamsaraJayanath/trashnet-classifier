@@ -32,15 +32,15 @@ The model classifies waste into the following categories:
 ## 🏗️ Project Structure
 
 
-projects/
-├── data_setup.py # Data loading and preprocessing
-├── model_builder.py # CNN model architecture
-├── engine.py # Training and evaluation loops
-├── train.py # Main training script
-├── utils.py # Helper functions (save, load, plot, etc.)
-├── predict.py # Inference / prediction script
+projects/<br>
+├── data_setup.py # Data loading and preprocessing<br>
+├── model_builder.py # CNN model architecture<br>
+├── engine.py # Training and evaluation loops<br>
+├── train.py # Main training script<br>
+├── utils.py # Helper functions (save, load, plot, etc.)<br>
+├── predict.py # Inference / prediction script<br>
 
-models/
+models/<br>
 └── best_model.pth # Saved trained model
 
 
