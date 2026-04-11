@@ -45,12 +45,11 @@ projects/<br>
 ---
 
 ## ⚙️ Tech Stack
-- Python 🐍
-- PyTorch 🔥
+- Python 
+- PyTorch 
 - Torchvision
 - NumPy
 - Matplotlib
-- Scikit-learn (optional utilities)
 
 ---
 
@@ -67,8 +66,12 @@ projects/<br>
 ```bash
 git clone https://github.com/your-username/trashnet-classifier.git
 cd trashnet-classifier
+```
+<br>
 2️⃣ Install dependencies
+```bash
 pip install torch torchvision matplotlib numpy
+```
 3️⃣ Train model
 python -m projects.train
 4️⃣ Run prediction
@@ -76,12 +79,15 @@ from projects.predict import predict_image
 📷 Example Output
 Input image → waste item
 Output → predicted class + confidence score
+
+
 💡 Key Learnings
 CNN architecture design
 Image augmentation techniques
 Training optimization in PyTorch
 Modular ML project structure
 Model evaluation and saving strategies
+<br>
 📌 Future Improvements
 Use Transfer Learning (ResNet/EfficientNet) for higher accuracy
 Deploy using Streamlit or Gradio web app
