@@ -3,8 +3,6 @@ import torch
 from tqdm.auto import tqdm
 from pathlib import Path
 
-
-
 # Train Step
 
 def train_step(model,
