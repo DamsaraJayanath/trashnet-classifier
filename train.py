@@ -3,7 +3,7 @@ import torch
 from timeit import default_timer as timer
 
 from projects.data_setup import create_dataloaders
-from projects.model_builder import TrashNetV3
+from projects.model_builder import TrashNet
 from projects.engine import train
 
 
@@ -27,7 +27,7 @@ train_dataloader, test_dataloader, class_names = create_dataloaders(
 
 
 # Model
-model = TrashNetV3(
+model = TrashNet(
     input_shape=3,
     hidden_units=HIDDEN_UNITS,
     output_shape=len(class_names)
@@ -35,7 +35,7 @@ model = TrashNetV3(
 
 # Set Loss function and Optimizer
 loss_fn = torch.nn.CrossEntropyLoss()
-optimizer = torch.optim.Adam(model.parameters(), lr=LR)
+optimizer = torch.optim.Adam(model.parameters(), lr=LR, weight_decay=1e-4)
 
 # Training
 start_time = timer()
