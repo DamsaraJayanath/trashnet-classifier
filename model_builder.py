@@ -5,7 +5,6 @@ class TrashNet(nn.Module):
     def __init__(self, input_shape: int = 3, hidden_units: int = 64, output_shape: int = 6):
         super().__init__()
 
-        # Block 1
         self.block1 = nn.Sequential(
             nn.Conv2d(input_shape, hidden_units, 3, padding=1),
             nn.BatchNorm2d(hidden_units),
@@ -16,7 +15,6 @@ class TrashNet(nn.Module):
             nn.MaxPool2d(2)
         )
 
-        # Block 2
         self.block2 = nn.Sequential(
             nn.Conv2d(hidden_units, hidden_units*2, 3, padding=1),
             nn.BatchNorm2d(hidden_units*2),
@@ -27,24 +25,22 @@ class TrashNet(nn.Module):
             nn.MaxPool2d(2)
         )
 
-        # Block 3 - Made stronger
         self.block3 = nn.Sequential(
             nn.Conv2d(hidden_units*2, hidden_units*4, 3, padding=1),
             nn.BatchNorm2d(hidden_units*4),
             nn.ReLU(inplace=True),
-            nn.Conv2d(hidden_units*4, hidden_units*4, 3, padding=1),   # Added second conv
+            nn.Conv2d(hidden_units*4, hidden_units*4, 3, padding=1),   
             nn.BatchNorm2d(hidden_units*4),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(2)
         )
 
-        # Classifier - Simplified & Stronger
         self.classifier = nn.Sequential(
             nn.AdaptiveAvgPool2d((1, 1)),
             nn.Flatten(),
             nn.Linear(hidden_units*4, 512),
             nn.ReLU(inplace=True),
-            nn.Dropout(0.3),                    # Increased
+            nn.Dropout(0.3),                    
             nn.Linear(512, output_shape)
         )
 
