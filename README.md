@@ -73,7 +73,7 @@ Example Output
 Input image → waste item
 Output → predicted class + confidence score
 ```
-
+---
 Key Learnings
 - CNN architecture design
 - Image augmentation techniques
