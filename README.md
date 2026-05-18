@@ -15,7 +15,6 @@ The model classifies waste into the following categories:
 4. Paper
 5. Plastic
 6. Trash
------
 
 ## Project Structure
 
@@ -30,7 +29,6 @@ projects/<br>
 ├── models/<br>
 │   └── best_model.pth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Saved trained model)<br>
 
----
 
 ## Tech Stack
 - Python 
@@ -39,14 +37,12 @@ projects/<br>
 - NumPy
 - Matplotlib
 
----
+
 
 ## Model Performance
 - Best Test Accuracy: **~75%**
 - Dataset: TrashNet
 - Input Image Size: 224 × 224
-
----
 
 
 
