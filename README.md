@@ -5,7 +5,6 @@ This project is an image classification system that identifies different types o
 
 The goal of the project is to support smart recycling and automated waste sorting systems.
 
----
 
 ## Classes
 The model classifies waste into the following categories:
