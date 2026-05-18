@@ -15,7 +15,7 @@ The model classifies waste into the following categories:
 4. Paper
 5. Plastic
 6. Trash
----
+-----
 
 ## Project Structure
 
