@@ -6,17 +6,6 @@ A custom Convolutional Neural Network (CNN) built with PyTorch is trained to rec
 
 ---
 
-## Features
-- Custom CNN built from scratch using PyTorch
-- Data preprocessing and augmentation pipeline
-- Train/Test split automation
-- Model training with accuracy tracking
-- Best model saving mechanism
-- Inference system for real image prediction
-- Modular and production-style project structure
-
----
-
 ## Classes
 The model classifies waste into the following categories:
 
