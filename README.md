@@ -1,21 +1,21 @@
 # TrashNet Waste Classification using Deep Learning
 
 ## Overview
-This project is a deep learning-based image classification system that classifies waste items into different categories using the **TrashNet dataset**.  
-A custom Convolutional Neural Network (CNN) built with PyTorch is trained to recognize different types of waste for smart recycling applications.
+This project is an image classification system that identifies different types of waste using Deep Learning and Computer Vision. The model was trained on the TrashNet dataset using a custom Convolutional Neural Network (CNN) built with PyTorch.
+
+The goal of the project is to support smart recycling and automated waste sorting systems.
 
 ---
 
 ## Classes
 The model classifies waste into the following categories:
 
-- Cardboard
-- Glass
-- Metal
-- Paper
-- Plastic
-- Trash
-
+1. Cardboard
+2. Glass
+3. Metal
+4. Paper
+5. Plastic
+6. Trash
 ---
 
 ## Project Structure
@@ -48,6 +48,8 @@ projects/<br>
 - Input Image Size: 224 × 224
 
 ---
+
+
 
 ## How to Run
 
