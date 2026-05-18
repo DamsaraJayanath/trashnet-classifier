@@ -62,33 +62,33 @@ projects/<br>
 
 ## How to Run
 
-### 1️⃣ Clone repository
+1️. Clone repository
 ```bash
 git clone https://github.com/your-username/trashnet-classifier.git
 cd trashnet-classifier
 ```
 <br>
 
-2️⃣ Install dependencies
+2️. Install dependencies
 ```bash
 pip install torch torchvision matplotlib numpy
 ```
 
-3️⃣ Train model
+3️. Train model
 ```bash
 python -m projects.train
 ```
-4️⃣ Run prediction
+4️. Run prediction
 ```bash
 from projects.predict import predict_image
 ```
-📷 Example Output
+Example Output
 ```bash
 Input image → waste item
 Output → predicted class + confidence score
 ```
 
-💡 Key Learnings
+Key Learnings
 - CNN architecture design
 - Image augmentation techniques
 - Training optimization in PyTorch
@@ -96,7 +96,7 @@ Output → predicted class + confidence score
 - Model evaluation and saving strategies
 <br>
 
-📌 Future Improvements
+Future Improvements
 - Use Transfer Learning (ResNet/EfficientNet) for higher accuracy
 - Deploy using Streamlit or Gradio web app
 - Add real-time webcam detection
